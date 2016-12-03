@@ -4,8 +4,9 @@
   "description": "Themeable CSS Framework",
   "main": "index.js",
   "scripts": {
-    "dev": "stylus --watch src/stylus/zeronos.styl --out dist/zeronos.css --use ./node_modules/autoprefixer-stylus --with \"{ browsers: ['>1%', 'last 2 versions', 'ie 7-11'] }\"",
-    "build": "stylus --compress --sourcemap src/stylus/zeronos.styl --out dist/zeronos.min.css --use ./node_modules/autoprefixer-stylus --with \"{ browsers: ['>1%', 'last 2 versions', 'ie 7-11'] }\""
+    "dev": "stylus --watch ./src/stylus/zeronos.styl --out ./dist/zeronos.css --use ./node_modules/autoprefixer-stylus --with \"{ browsers: ['>1%', 'last 2 versions', 'ie 7-11'] }\"",
+    "build": "stylus --compress --sourcemap ./src/stylus/zeronos.styl --out ./dist/zeronos.min.css --use ./node_modules/autoprefixer-stylus --with \"{ browsers: ['>1%', 'last 2 versions', 'ie 7-11'] }\"",
+    "lint": "stylint ./src/stylus/"
   },
   "author": "Kevin Ongko",
   "license": "MIT",

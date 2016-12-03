@@ -1,41 +1,48 @@
 .row
     display: flex
-    margin-left: -10px
-    margin-right: -10px
-    margin-top: -10px
-    flex-wrap: wrap
-
-    &:last-child
-        margin-bottom: -10px
 
     &:not(:last-child)
         margin-bottom: 10px
 
+    &--is-multiline
+        flex-wrap: wrap
+
+    &--is-centered
+        justify-content: center
+
+    &--is-vcentered
+        align-items: center
+
 .column
     display: block
     flex-basis: 0
-    flex-grow: 0
-    flex-shrink: 0
+    flex-grow: 1
+    flex-shrink: 1
     padding: 10px
+
     for $i in (1)..(12)
         &--is-{$i}
             flex: none
             width: ($i/12*100%)
+
     +mobile()
         for $i in (1)..(12)
             &--is-{$i}-mobile
                 flex: none
                 width: ($i/12*100%)
+
     +tablet()
         for $i in (1)..(12)
             &--is-{$i}-tablet
                 flex: none
                 width: ($i/12*100%)
+
     +desktop()
         for $i in (1)..(12)
             &--is-{$i}-desktop
                 flex: none
                 width: ($i/12*100%)
+
     +widescreen()
         for $i in (1)..(12)
             &--is-{$i}-widescreen
