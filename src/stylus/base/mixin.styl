@@ -1,0 +1,36 @@
+$tablet = 769px
+$desktop = 980px
+$widescreen = 1180px
+
+from($device)
+    @media screen and (min-width: $device)
+        {block}
+
+until($device)
+    @media screen and (max-width: $device - 1px)
+        {block}
+
+mobile()
+    @media screen and (max-width: $tablet - 1px)
+        {block}
+
+tablet()
+    @media screen and (min-width: $tablet)
+        {block}
+
+tablet-only()
+    @media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+        {block}
+
+desktop()
+    @media screen and (min-width: $desktop)
+        {block}
+
+desktop-only()
+    @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+        {block}
+
+widescreen()
+    @media screen and (min-width: $widescreen)
+        {block}
+
