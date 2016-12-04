@@ -1,13 +1,53 @@
 html {
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background-color: #ececec;
+  min-width: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
 }
--moz-osx-font-smoothing: grayscale,
-min-width: 300px,
-overflow-x: hidden,
-overflow-y: scroll,
-text-rendering: optimizeLegibility,
+code,
+pre {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+body {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #141414;
+}
+hr {
+  background-color: #141414;
+  border: none;
+  display: block;
+  height: 1px;
+  margin: 1rem 0;
+}
 img {
   max-width: 100%;
+}
+a {
+  text-decoration: none;
+  color: #a5a5a5;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+a:hover {
+  color: #f89406;
+  text-decoration: underline;
+}
+span {
+  font-style: inherit;
+  font-weight: inherit;
 }
 html,
 body,
@@ -90,7 +130,7 @@ th {
   display: flex;
 }
 .row:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 .row--is-multiline {
   -ms-flex-wrap: wrap;
@@ -493,19 +533,16 @@ th {
   font-size: 1rem;
 }
 .text--is-2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .text--is-3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 .text--is-4 {
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 .text--is-5 {
-  font-size: 1.8rem;
-}
-.text--is-6 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .text--is-small {
   font-size: 0.8rem;

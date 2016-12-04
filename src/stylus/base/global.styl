@@ -1,10 +1,48 @@
 html
-	-webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    background-color: $color-body-background
     min-width: 300px
     overflow-x: hidden
     overflow-y: scroll
     text-rendering: optimizeLegibility
 
+code,
+pre
+    -moz-osx-font-smoothing: auto
+    -webkit-font-smoothing: auto
+
+body,
+button,
+input,
+select,
+textarea
+    font-family: $font-family-primary
+
+body
+    font-size: $font-size-1
+    font-weight: $font-weight-normal
+    color: $color-text
+
+hr
+    background-color: $color-border
+    border: none
+    display: block
+    height: 1px
+    margin: 1rem 0
+
 img
 	max-width: 100%
+
+a
+    text-decoration: none
+    color: $color-link
+    cursor: pointer
+    transition: all $animation-speed ease-out
+    &:hover
+        color: $color-link-hover
+        text-decoration: underline
+
+span
+    font-style: inherit
+    font-weight: inherit
