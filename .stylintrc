@@ -23,7 +23,7 @@
     "namingConvention": "BEM",
     "namingConventionStrict": false,
     "none": "always",
-    "noImportant": true,
+    "noImportant": false,
     "parenSpace": false,
     "placeholders": "always",
     "prefixVarsWithDollar": "always",

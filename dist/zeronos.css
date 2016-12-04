@@ -1,4 +1,14 @@
-/* minireset.css v0.0.2 | MIT License | github.com/jgthms/minireset.css */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+-moz-osx-font-smoothing: grayscale,
+min-width: 300px,
+overflow-x: hidden,
+overflow-y: scroll,
+text-rendering: optimizeLegibility,
+img {
+  max-width: 100%;
+}
 html,
 body,
 p,
@@ -39,6 +49,7 @@ ul {
 }
 button,
 input,
+optgroup,
 select,
 textarea {
   margin: 0;
@@ -473,4 +484,86 @@ th {
             flex: none;
     width: 100%;
   }
+}
+.text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.text--is-1 {
+  font-size: 1rem;
+}
+.text--is-2 {
+  font-size: 1.2rem;
+}
+.text--is-3 {
+  font-size: 1.4rem;
+}
+.text--is-4 {
+  font-size: 1.6rem;
+}
+.text--is-5 {
+  font-size: 1.8rem;
+}
+.text--is-6 {
+  font-size: 2rem;
+}
+.text--is-small {
+  font-size: 0.8rem;
+}
+.text--is-bold {
+  font-weight: bold;
+}
+.text--is-bolder {
+  font-weight: bolder;
+}
+.text--is-lighter {
+  font-weight: lighter;
+}
+.text--is-centered {
+  text-align: center;
+}
+.is-clipped {
+  overflow: hidden !important;
+}
+.is-hidden {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .is-hidden-tablet {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 979px) {
+  .is-hidden-tablet-only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 980px) {
+  .is-hidden-desktop {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1179px) {
+  .is-hidden-desktop-only {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .is-hidden-widescreen {
+    display: none !important;
+  }
+}
+.is-disabled {
+  pointer-events: none;
+}
+.is-marginless {
+  margin: 0 !important;
+}
+.is-paddingless {
+  padding: 0 !important;
 }
