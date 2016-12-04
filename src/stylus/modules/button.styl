@@ -1,0 +1,52 @@
+$states = primary, success, warning, danger
+
+$state-colors = {
+    primary: $color-primary,
+    success: $color-success,
+    warning: $color-warning,
+    danger: $color-danger
+}
+
+.button
+    background-color: $button-background-color
+    border-radius: $button-border-radius
+    border: $button-border
+    color: $button-text-color
+    cursor: pointer
+    justify-content: center
+    padding: $button-padding
+    text-align: center
+    white-space: nowrap
+    &:hover
+        border: $button-border-hover
+    &:focus
+        outline: initial
+        border: 1px solid $color-primary
+
+    &--is-fullwidth
+        display: flex
+        width: 100%
+
+    &--is-disabled
+        opacity: 0.5
+
+    for $state in $states
+        &--is-{$state}
+            background: $state-colors[$state]
+            border: 1px solid $state-colors[$state]
+            background-color: $state-colors[$state]
+            color: white
+            transition: all $animation-speed ease
+            &:hover
+                background-color: white
+                color: $state-colors[$state]
+                border: 1px solid $state-colors[$state]
+            &:focus
+                border: 1px solid $state-colors[$state]
+
+        &--is-hollow
+            background: white
+            color: $state-colors[$state]
+            &:hover
+                background-color: $state-colors[$state]
+                color: white

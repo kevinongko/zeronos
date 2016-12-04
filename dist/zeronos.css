@@ -25,7 +25,7 @@ body {
   color: #141414;
 }
 hr {
-  background-color: #141414;
+  background-color: $color-border;
   border: none;
   display: block;
   height: 1px;
@@ -36,13 +36,13 @@ img {
 }
 a {
   text-decoration: none;
-  color: #a5a5a5;
+  color: #767676;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
 a:hover {
-  color: #f89406;
+  color: $primary-color;
   text-decoration: underline;
 }
 span {
@@ -123,6 +123,131 @@ td,
 th {
   padding: 0;
   text-align: left;
+}
+.button {
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #d3d3d3;
+  color: #141414;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3rem 1em;
+  text-align: center;
+  white-space: nowrap;
+}
+.button:hover {
+  border: 1px solid #141414;
+}
+.button:focus {
+  outline: initial;
+  border: 1px solid #f89406;
+}
+.button--is-fullwidth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.button--is-disabled {
+  opacity: 0.5;
+}
+.button--is-primary {
+  background: #f89406;
+  border: 1px solid #f89406;
+  background-color: #f89406;
+  color: #fff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.button--is-primary:hover {
+  background-color: #fff;
+  color: #f89406;
+  border: 1px solid #f89406;
+}
+.button--is-primary:focus {
+  border: 1px solid #f89406;
+}
+.button--is-hollow {
+  background: #fff;
+  color: #f89406;
+}
+.button--is-hollow:hover {
+  background-color: #f89406;
+  color: #fff;
+}
+.button--is-success {
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  background-color: #4ecdc4;
+  color: #fff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.button--is-success:hover {
+  background-color: #fff;
+  color: #4ecdc4;
+  border: 1px solid #4ecdc4;
+}
+.button--is-success:focus {
+  border: 1px solid #4ecdc4;
+}
+.button--is-hollow {
+  background: #fff;
+  color: #4ecdc4;
+}
+.button--is-hollow:hover {
+  background-color: #4ecdc4;
+  color: #fff;
+}
+.button--is-warning {
+  background: #f7ca18;
+  border: 1px solid #f7ca18;
+  background-color: #f7ca18;
+  color: #fff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.button--is-warning:hover {
+  background-color: #fff;
+  color: #f7ca18;
+  border: 1px solid #f7ca18;
+}
+.button--is-warning:focus {
+  border: 1px solid #f7ca18;
+}
+.button--is-hollow {
+  background: #fff;
+  color: #f7ca18;
+}
+.button--is-hollow:hover {
+  background-color: #f7ca18;
+  color: #fff;
+}
+.button--is-danger {
+  background: #ec644b;
+  border: 1px solid #ec644b;
+  background-color: #ec644b;
+  color: #fff;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+.button--is-danger:hover {
+  background-color: #fff;
+  color: #ec644b;
+  border: 1px solid #ec644b;
+}
+.button--is-danger:focus {
+  border: 1px solid #ec644b;
+}
+.button--is-hollow {
+  background: #fff;
+  color: #ec644b;
+}
+.button--is-hollow:hover {
+  background-color: #ec644b;
+  color: #fff;
 }
 .row {
   display: -webkit-box;
