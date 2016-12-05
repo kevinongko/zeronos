@@ -1,6 +1,6 @@
 {
   "name": "zeronos",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimalistic CSS Framework",
   "scripts": {
     "dev": "stylus --watch ./src/stylus/zeronos.styl --out ./dist/zeronos.css --use ./node_modules/autoprefixer-stylus --with \"{ browsers: ['>1%', 'last 2 versions', 'ie 7-11'] }\"",
